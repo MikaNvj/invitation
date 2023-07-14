@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './component/header';
+import Page from './component/Page';
+import { Mappagedata } from './component/Atom/Data';
+import { useRecoilState } from 'recoil';
 
 function App() {
+  const [mappages, setmappages] = useRecoilState(Mappagedata)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className='scroll'>
+        {mappages.map(e => <Page />)}
+        
+      </div>
+
     </div>
   );
 }

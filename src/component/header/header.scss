@@ -1,0 +1,249 @@
+.childcontaint{
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    align-items: center;
+    gap: 3em;
+    user-select: none;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0,0,0,.05);
+    .modeparent{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 0.5px dashed;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        p{
+            margin: 0;
+            font-size: 12px;
+        }
+        button{
+            height: 50%;
+        }
+        .affichagemode{
+            width: 9em;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            justify-content: center;
+            align-items: center;
+            .paysage{
+                width: 2em;
+                height: 2em;
+                border-radius: 5px;
+                background-image: url('../assets/paper-mode.svg');
+                background-size: 100% 100%;
+                background-position: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(255, 231, 206);
+                }
+
+            }
+            .nonpaysage{
+                width: 2em;
+                height: 2em;
+                border-radius: 5px;
+                background-image: url('../assets/portrait.svg');
+                background-size: 100% 100%;
+                background-position: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(255, 231, 206);
+                }
+
+            }
+        }
+    }
+    .aboutcomponent{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        text-align: left;
+        border: 0.5px dashed;
+        width: 18em;
+        height: 100%;
+        padding: 3px 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        
+        p{
+            margin: 0;
+            font-size: 12px;
+        }
+        .paperseter{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .sender{
+                font-weight: 900;
+                cursor: pointer;
+            }
+        }
+        .inputcontent{
+            width: 100%;
+            height: 3em;
+            display: flex;
+            gap: 15px;
+            input{
+                height: 2.5em;
+                width: 50%;
+                box-sizing: border-box;
+                padding-left: 10px;
+                font-size: 10px;
+                background-color: transparent;
+                border: none;
+                border: 1px solid rgb(251, 154, 50);
+                outline: none;
+            }
+        }
+
+
+    }
+    .addinfo{
+        font-size: 18px;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    .data{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        text-align: left;
+        border: 0.5px dashed;
+        width: 10em;
+        height: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 12px;
+        .imglab{
+            position: relative;
+            display: block;
+            background-color: white;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.163);
+            border-radius: 0.4em;
+            overflow: hidden;
+            background-image: url('../assets/data-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px .1em .2em 0em rgba(0, 0, 0, 0.163);
+            }
+            input {
+                display: none;
+              }
+        }
+    }
+    
+    .design{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        text-align: left;
+        border: 0.5px dashed;
+        width: 10em;
+        height: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 12px;
+        .imglab{
+            position: relative;
+            display: block;
+            background-color: white;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.163);
+            border-radius: 0.4em;
+            overflow: hidden;
+            background-image: url('../assets/image-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px .1em .2em 0em rgba(0, 0, 0, 0.163);
+            }
+            input {
+                display: none;
+              }
+        }
+    }
+    .positiontext{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        text-align: left;
+        border: 0.5px dashed;
+       
+        height: 8vh;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        p{
+            margin: 0;
+        }
+        .position{
+            display: flex;
+            gap: 25px;
+            .X{
+                display: flex;
+                gap: 2px;
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    height: 35px;
+                    cursor: pointer;
+                    background-color: transparent;
+                    border: 2px solid rgb(251, 154, 50);
+                    color: rgb(251, 154, 50);
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        background-color: rgb(251, 154, 50);
+                        color: white;
+                    }
+                    
+                }
+            }
+            .Y{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 2em;
+                    height: 17px;
+                    font-size: 20px;
+                    border: 2px solid rgb(251, 154, 50);
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: rgb(251, 154, 50);
+                }
+            }
+        }
+    }
+}

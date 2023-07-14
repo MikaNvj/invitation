@@ -1,0 +1,13 @@
+.parentcontain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    gap: 2px;
+    display: flex;
+    padding: 8px;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 13px rgba(174, 174, 174, 0.067);
+}
