@@ -4,7 +4,7 @@ import { height, width } from "../Atom/Page";
 import { useRecoilState } from "recoil";
 import { heightchild, image, mapingchild, widthchild } from "../Atom/Child";
 import * as XLSX from 'xlsx';
-import { Data, Mappagedata } from "../Atom/Data";
+import { Data, Mappagedata, datashow } from "../Atom/Data";
 
 const Header = () => {
     const [widthpage, setwidthpage] = useRecoilState(width);
@@ -12,6 +12,7 @@ const Header = () => {
 
     const [widthchilds, setwidthchilds] = useRecoilState(widthchild);
     const [heightchilds, setheightchilds] = useRecoilState(heightchild);
+    const [showdata, setshowdata] = useRecoilState(datashow)
     const [Design, setDesign] = useRecoilState(image)
     const [lignes, setlignes] = useState<number>();
     const [colonnes, setcolonnes] = useState<number>();
@@ -68,6 +69,7 @@ const Header = () => {
             }
             setmapchild(tab)
         }
+        console.log(mappages)
         
 
     }
@@ -117,6 +119,7 @@ const Header = () => {
       
         reader.readAsArrayBuffer(file);
       };
+      
    
 
 
@@ -161,7 +164,7 @@ const Header = () => {
 
             </div>
 
-            <div className="addinfo">
+            <div className="addinfo" onClick={() => setshowdata(true)}>
                 +
             </div>
         </div>

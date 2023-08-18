@@ -1,0 +1,42 @@
+.Adddata{
+    width: 100vw;
+    height: 120vh;
+    background-color: rgba(193, 151, 247, 0.266);
+    backdrop-filter: blur(3px);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    .containerdata{
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        p{
+            margin: 0%;
+        }
+        input{
+            height: 3em;
+            width: 50%;
+        }
+        button{
+            height: 3em;
+            width: 50%;
+            border: none;
+            border-radius: .2em;
+            background-color: rgb(105, 138, 255);
+            color: white;
+            cursor: pointer;
+            font-weight: bolder;
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+}
